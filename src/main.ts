@@ -22,7 +22,6 @@ let lastText = '';
 
 function render() {
   let result = '';
-  const keepFormatting = keepFormattingCb.checked;
   
   const options = {
     keepFormatting: keepFormattingCb.checked,
