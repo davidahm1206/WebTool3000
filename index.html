@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebTool3000</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <h1>WebTool3000</h1>
+        <p>Paste your rich text here (Ctrl+V) to get clean HTML</p>
+      </header>
+      <main>
+        <div class="split-pane">
+          <div class="input-pane">
+            <div id="paste-area" contenteditable="true" data-placeholder="Paste (Ctrl+V) from Word or any website here..."></div>
+          </div>
+          <div class="output-pane">
+            <div class="output-header">
+              <h2>Generated HTML</h2>
+              <button id="copy-btn">Copy Output</button>
+            </div>
+            <textarea id="html-output" readonly placeholder="Your clean HTML will appear here..."></textarea>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
