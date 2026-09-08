@@ -22,16 +22,16 @@ body {
   line-height: 1.6;
   display: flex;
   justify-content: center;
-  padding: 2rem;
+  padding: 1rem;
   height: 100vh;
 }
 
 #app {
   width: 100%;
-  max-width: 1400px;
+  max-width: 98vw;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1rem;
   height: 100%;
 }
 
@@ -49,8 +49,8 @@ header p {
 
 .split-pane {
   display: flex;
-  gap: 2rem;
-  height: calc(100% - 100px);
+  gap: 1.5rem;
+  flex: 1;
 }
 
 .input-pane, .output-pane {
@@ -94,6 +94,78 @@ header p {
   text-transform: uppercase;
   letter-spacing: 0.05em;
   color: #495057;
+}
+
+.controls {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.checkbox-group {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.advanced-inputs {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.advanced-inputs input {
+  padding: 0.5rem 0.6rem;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  font-size: 0.85rem;
+  outline: none;
+  width: 220px;
+  transition: border-color 0.2s;
+}
+
+.advanced-inputs input:focus {
+  border-color: var(--accent-color);
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #495057;
+  cursor: pointer;
+  user-select: none;
+}
+
+.checkbox-label input {
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+  accent-color: var(--accent-color);
+}
+
+.secondary-btn {
+  background: var(--surface-color);
+  color: #495057;
+  border: 1px solid var(--border-color);
+  padding: 0.5rem 1rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: transform 0.1s ease, background-color 0.2s;
+}
+
+.secondary-btn:hover {
+  background: #f8f9fa;
+  color: #212529;
+}
+
+.secondary-btn:active {
+  transform: translateY(0);
 }
 
 #copy-btn {

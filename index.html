@@ -20,7 +20,36 @@
           <div class="output-pane">
             <div class="output-header">
               <h2>Generated HTML</h2>
-              <button id="copy-btn">Copy Output</button>
+              <div class="controls">
+                <div class="checkbox-group">
+                  <label class="checkbox-label" title="Keep formatting like bold, italic, underline, superscript, and links">
+                    <input type="checkbox" id="keep-formatting" checked>
+                    Keep Formatting
+                  </label>
+                  <label class="checkbox-label" title="Force first row into a <thead> block">
+                    <input type="checkbox" id="use-thead">
+                    First Row as Header
+                  </label>
+                  <label class="checkbox-label" title="Wrap text in <span> instead of <p>">
+                    <input type="checkbox" id="use-span">
+                    Use &lt;span&gt; for text
+                  </label>
+                </div>
+                <div class="advanced-inputs">
+                  <input type="text" id="table-class" placeholder="e.g. table table-dark" title="Table Classes">
+                  <input type="text" id="table-style" placeholder="e.g. width: 100%;" title="Table Inline Styles">
+                  <input type="text" id="td-class" placeholder="e.g. text-center" title="Cell (td/th) Classes">
+                  <input type="text" id="td-style" placeholder="e.g. padding: 10px;" title="Cell (td/th) Inline Styles">
+                  <input type="text" id="text-class" placeholder="e.g. text-muted" title="Text (p/span) Classes">
+                  <input type="text" id="text-style" placeholder="e.g. margin-bottom: 5px;" title="Text (p/span) Inline Styles">
+                  
+                  <div style="flex-basis: 100%; display: flex; gap: 0.5rem; justify-content: flex-end; margin-top: 0.25rem;">
+                    <button id="extract-btn" class="secondary-btn" title="Extract table styles from clipboard">Import Styles</button>
+                    <button id="clear-btn" class="secondary-btn" title="Clear all classes and styles">Clear</button>
+                  </div>
+                </div>
+                <button id="copy-btn">Copy Output</button>
+              </div>
             </div>
             <textarea id="html-output" readonly placeholder="Your clean HTML will appear here..."></textarea>
           </div>
