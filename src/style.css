@@ -98,53 +98,27 @@ header p {
 
 .controls {
   display: flex;
-  align-items: flex-end;
-  flex-direction: column;
-  gap: 0.75rem;
+  align-items: center;
+  flex-direction: row;
+  gap: 1rem;
 }
 
-.checkbox-group {
-  display: flex;
-  gap: 1.5rem;
-}
-
-.advanced-inputs {
-  display: flex;
-  gap: 0.5rem;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-}
-
-.advanced-inputs input {
-  padding: 0.5rem 0.6rem;
-  border: 1px solid var(--border-color);
-  border-radius: 4px;
-  font-size: 0.85rem;
-  outline: none;
-  width: 220px;
-  transition: border-color 0.2s;
-}
-
-.advanced-inputs input:focus {
-  border-color: var(--accent-color);
-}
-
-.checkbox-label {
+.color-control {
   display: flex;
   align-items: center;
   gap: 0.5rem;
   font-size: 0.875rem;
-  font-weight: 500;
+  font-weight: 600;
   color: #495057;
-  cursor: pointer;
-  user-select: none;
 }
 
-.checkbox-label input {
+.color-control input {
   cursor: pointer;
-  width: 16px;
-  height: 16px;
-  accent-color: var(--accent-color);
+  width: 40px;
+  height: 30px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  padding: 0;
 }
 
 .secondary-btn {
